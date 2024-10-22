@@ -73,7 +73,6 @@ EOF
 monitor_and_annotate() {
   sleep 10
   while true; do
-    echo "in loop"
     sleep 10
     cpu_lines=$(tail -n $(( $(sysctl -n hw.ncpu) + 1 )) /Users/vagrant/deploy/cpu_metrics.out)
 
